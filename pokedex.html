@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to bottom, #e72354, #fad37a);
+            font-family: 'press start 2p', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        .container{
+            background-color: white;
+            border: 3x solid #333;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            font-size: 16px;
+            overflow: hidden;
+        }
+        .container h1{
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: black;
+        }
+        .imagem-pokemon{
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        .info-pokemon{
+            font-size: 18px;
+            color: #000000;
+        }
+        .info-pokemom p{
+            margin: 6px 0;
+        }
+        .fita-tipo{
+            display: inline-block;
+            background-color: #06d6a0;
+            padding: 5px 12px;
+            border-radius: 14px;
+            margin-top: 8px;
+        }
+        .area-busca{
+            margin-top: 20px;
+
+        }
+        .area-busca input{
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 80%;
+            margin-bottom: 10px;
+            font-size: 14px; 
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>pokédex</h1>
+
+        <img class="imagem-pokemon" src="wttp://via.placeholder.com/150" alt="imagem do pokemon" id= "imagem">
+
+    <div class="info-pokemon">
+        <p><strong>nome:</strong><span id="nome">---</span></p>
+        <p><strong>Número:</strong><span id="numero">---</span></p>
+        <p><strong>tipo:</strong><span id="ntipo">---</span></p>
+    </div>
+
+
+    <div class="area-busca">
+        <input type="text" id="entrada" placeholder="digite o nome ou número de pokemon">
+        <button id="botao-buscar">buscar</button>
+    </div>
+    </div>
+</body>
+</html>
